@@ -76,7 +76,8 @@ function App() {
                   Лендинг для компании{' '}
                   <a href="https://alexbash82.github.io/website-bitafit/">
                     BitaFit
-                  </a>
+                  </a>{' '}
+                  . В проекте применены: JS, SASS...
                 </div>
               </li>
             </ul>
