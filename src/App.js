@@ -1,11 +1,7 @@
 import './App.scss'
 
 function App() {
-  function fullYear() {
-    const dob = '19820219'
-    const year = Number(dob.substr(0, 4))
-    const month = Number(dob.substr(4, 2)) - 1
-    const day = Number(dob.substr(6, 2))
+  function fullYear(year, month, day) {
     const today = new Date()
     let age = today.getFullYear() - year
     if (
@@ -43,7 +39,7 @@ function App() {
               Локация: Екатеринбург
             </div>
             <div className="Body_resume_mainInfo_text_string">
-              Полных лет: {fullYear()}
+              Полных лет: {fullYear(1982, 2, 19)}
             </div>
             <div className="Body_resume_mainInfo_text_string">
               Почта: kometa.4m@gmail.com
@@ -81,12 +77,13 @@ function App() {
                 </a>
               </p>
               <p className="Body_resume_personInfo_variants_item_text">
-                Сайт адаптирован под различные экраны: от 320рх до 1920рх.
+                Сайт адаптирован под различные экраны: от 320рх до 3200рх.
+                <br />В зависимости от версии браузера используются изображения
+                в различных форматах: jpeg, png или webp.
               </p>
               <p className="Body_resume_personInfo_variants_item_text">
                 В проекте применены: JS, React, SASS, Flex, React-hook-form,
-                <br />
-                React-input-mask.
+                React-input-mask, кастомный хук: useScroll.
               </p>
               <p className="Body_resume_personInfo_variants_item_text">
                 Ссылка на репозиторий{' '}
@@ -126,6 +123,13 @@ function App() {
           </div>
         </div>
 
+        <div className="Body_resume_experience">
+          <div className="Body_resume_experience_title">Опыт работы:</div>
+          <div className="Body_resume_experience_item">
+            1) Фриланс: с мая 2022 по настоящее время
+          </div>
+        </div>
+
         <div className="Body_resume_aboutme">
           <div className="Body_resume_aboutme_title">О себе</div>
           <div className="Body_resume_aboutme_item">
@@ -138,9 +142,10 @@ function App() {
               безопасности. В последнее время стал задумываться о преимуществах
               работы без географической привязки. Хорошо всё обдумав, решил
               освоить программирование. По совету друзей, для освоения выбрал
-              язык JavaScript. На данный момент уже пишу небольшие программы и
-              получаю удовольствие от процесса и результата. Предвкушаю ещё
-              много нового и интересного!
+              язык JavaScript. С января 2022 года начал самостоятельное
+              обучение. На данный момент уже пишу небольшие программы и получаю
+              удовольствие от процесса и результата. Предвкушаю ещё много нового
+              и интересного!
             </p>
           </div>
         </div>
